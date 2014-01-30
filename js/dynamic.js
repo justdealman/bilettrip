@@ -1,27 +1,5 @@
-﻿$(window).load(function() {
-	$('.menu, .footer > ul').each (function() {
-		var chars = 0;
-		$(this).children('li').each(function() {
-			chars = chars + $(this).width();
-		});
-		var size = $(this).children('li').size() - 1;
-		var free = Math.floor ( ( 888 - chars ) / size );
-		$(this).children('li').css({'margin-right': free + 'px'});
-		$(this).children('li:last-child').css({'margin': '0'});
-		var margin = Math.floor ( ((888 - chars) - (free * size)) / 2 );
-		$(this).children('li:first-child').css({'margin-left': margin + 'px'});
-	});
-});
-$(document).ready(function() {
-	$('.index > div > .lb > div > div').slides({
-		pagination: false,
-		generateNextPrev: true,
-		container: 'container',
-		effect: 'slide',
-		slideSpeed: 250,
-		play: 7500,
-		pause: 2500
-	});
+﻿$(document).ready(function() {
+
 	$('.details .pictures').slides({
 		pagination: true,
 		generateNextPrev: false,
@@ -31,15 +9,7 @@ $(document).ready(function() {
 		play: 7500,
 		pause: 2500
 	});
-	$('.gallery > div').slides({
-		pagination: false,
-		generateNextPrev: true,
-		container: 'container',
-		effect: 'slide',
-		slideSpeed: 250,
-		play: 7500,
-		pause: 2500
-	});
+
 	$('input[type="checkbox"], select').uniform();
 	$('.lb .comments li > div > div > div, .visa ul li > div > div > div, .faq > ul li > div > div > div').append('<span></span>');
 	/* Visa start */

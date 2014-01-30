@@ -39,7 +39,11 @@
 
 /* Default */
 
+html {
+	height:100%;
+}
 body {
+	height:100%;
 	color:#142433;
 	font-size:15px;
 	line-height:29px;
@@ -135,6 +139,9 @@ button::-moz-focus-inner {
 .wrapper {
 	position:relative;
 	min-width:960px;
+	min-height:100%;
+	height:auto !important;
+	height:100%;
 }
 
 /* Header */
@@ -204,17 +211,18 @@ button::-moz-focus-inner {
 .menu {
 	clear:both;
 	overflow:hidden;
-	width:888px;
+	width:960px;
 	text-align:center;
-	padding:24px 36px 25px;
+	padding:22px 0 21px;
 	margin:0 auto 20px;
 	background:#248f8d;
 }
 .menu li {
-	float:left;
+	display:inline-block;
 	font-size:18px;
 	line-height:21px;
 	text-transform:uppercase;
+	margin:0 9px;
 }
 .menu li a {
 	display:block;
@@ -805,6 +813,10 @@ button::-moz-focus-inner {
 	padding:0 16px 15px;
 	margin:0 auto 42px;
 	background:url('./images/line_bg.png') no-repeat center bottom;
+}
+.sometext {
+	width:960px;
+	margin:0 auto;
 }
 .albums {
 	clear:both;
@@ -1486,26 +1498,33 @@ button::-moz-focus-inner {
 
 /* Footer */
 
+.clear {
+	clear:both;
+	overflow:hidden;
+	height:132px;
+}
 .footer {
+	position:relative;
+	z-index:1;
 	width:960px;
 	padding:24px 0 21px;
-	margin:0 auto;
+	margin:-132px auto 0;
 	background:#248f8d;
 }
 .footer > ul {
 	clear:both;
 	overflow:hidden;
-	width:888px;
+	width:960px;
 	text-align:center;
-	padding:0 36px;
 	margin:0 auto 39px;
 	background:#248f8d;
 }
 .footer > ul li {
-	float:left;
+	display:inline-block;
 	font-size:18px;
 	line-height:21px;
 	text-transform:uppercase;
+	margin:0 16px;
 }
 .footer > ul li a {
 	display:block;
