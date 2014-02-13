@@ -1,5 +1,13 @@
 ﻿$(document).ready(function() {
 
+	$('.visa ul li > div > div > div > div').jScrollPane({
+		verticalDragMinHeight: 60,
+		verticalDragMaxHeight: 60,
+		horizontalDragMinWidth: 60,
+		horizontalDragMaxWidth: 60,
+		verticalGutter: 20
+	});
+
 	$('.details .pictures').slides({
 		pagination: true,
 		generateNextPrev: false,
